@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AssemblyScript Benchmark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>WebAssembly for rendering benchmark</h1>
+    <p>Images are both 2000 * 2000 px (scaled down in View Layer)</p>
+    <section id="section.js-rendering">
+      <h2>Rendering with JS</h2>
+      <button class="btn.refresh">Refresh</button>
+      <span>Rendering time: <code class="code.exec-time"></code></span>
+      <canvas></canvas>
+    </section>
+
+    <section id="section.wasm-rendering">
+      <h2>Rendering with WebAssembly</h2>
+      <button class="btn.refresh">Refresh</button>
+      <span>Rendering time: <code class="code.exec-time"></code></span>
+      <canvas></canvas>
+    </section>
+  </main>
+</body>
+</html>
