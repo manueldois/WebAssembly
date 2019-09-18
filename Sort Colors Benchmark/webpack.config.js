@@ -1,6 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 
 module.exports = {
@@ -15,6 +17,11 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.wasm$/,
+                use: [],
+                exclude: /node_modules/
             }
         ]
     },
@@ -24,7 +31,10 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
+        new CopyWebpackPlugin([
+            {from: './src/assembly/index.wasm', to: './assembly/index.wasm'}
+        ])
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js']

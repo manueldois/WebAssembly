@@ -1,0 +1,12 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #293a4b;
+  margin: 0;
+  padding: 10px;
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 1.3em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AssemblyScript Benchmark</title>
+  <link rel="stylesheet" href="styles.css">
+<link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <main>
+    <h1>WebAssembly benchmark</h1>
+    <p>Images are both 100 * 100 px (scaled up in View Layer)</p>
+
+    <section id="section-controls">
+      <h3>Shared random image data for both:</h3>
+      <label for="">
+        Seed:
+        <input type="text" name="random-seed" class="in-random-seed" value="hello.">
+      </label>
+      <button class="btn-randomize">Make new initial random image</button>
+    </section>
+
+    <section id="section-js-rendering">
+      <h2>Sort colors with JS</h2>
+      <span>~ 10 to 15s to sort with <code>hello.</code> seed</span>
+      <div class="btns">
+        <button class="btn-reset">Reset</button>
+        <button class="btn-sort">Sort colors</button>
+      </div>
+      <div class="perfomance-uis">
+        <span>Rendering time: <code class="code-render-time"></code></span>
+        <span>Sorting time: <code class="code-sort-time"></code></span>
+      </div>
+      <div class="viewport">
+        <canvas></canvas>
+      </div>
+    </section>
+
+    <section id="section-wasm-rendering">
+      <h2>Sort colors with WebAssembly</h2>
+      <span>~ 7 to 9s to sort with <code>hello.</code> seed</span>
+      <div class="btns">
+        <button class="btn-reset">Reset</button>
+        <button class="btn-sort">Sort colors</button>
+      </div>
+      <div class="perfomance-uis">
+        <span>Rendering time: <code class="code-render-time"></code></span>
+        <span>Sorting time: <code class="code-sort-time"></code></span>
+      </div>
+      <div class="viewport">
+        <canvas></canvas>
+      </div>
+    </section>
+  </main>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>

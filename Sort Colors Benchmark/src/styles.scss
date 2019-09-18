@@ -1,0 +1,52 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #293a4b;
+  margin: 0;
+  padding: 10px;
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+section {
+  display: block;
+  margin-bottom: 40px;
+
+  > div.btns {
+    margin-top: 10px;
+
+    > button.btn-sort {
+
+    }
+  }
+
+  > div.perfomance-uis {
+    margin-top: 10px;
+    font-size: 1.2em;
+
+    > span ~ span {
+      margin-left: 20px
+    }
+  }
+  
+  > div.viewport {
+    position: relative;
+    margin-top: 10px;
+    height: 500px;
+
+    > canvas {
+      position: absolute;
+      display: block;
+      transform-origin: 0 0;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+
+    }
+  }
+}
+
+code {
+  padding: 3px 6px;
+}
