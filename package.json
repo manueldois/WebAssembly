@@ -5,7 +5,7 @@
   "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "asbuild:bench:optimized": "asc Sort\\ Colors\\ Benchmark/src/assembly/index.ts -b Sort\\ Colors\\ Benchmark/src/assembly/index.wasm -t Sort\\ Colors\\ Benchmark/src/assembly/index.wat --validate --optimize",
+    "asbuild:bench:optimized": "asc Sort\\ Colors\\ Benchmark/src/assembly/index.ts -b Sort\\ Colors\\ Benchmark/src/assembly/index.wasm -t Sort\\ Colors\\ Benchmark/src/assembly/index.wat --validate -O3 --runtime stub",
     "asbuild": "npm run asbuild:bench:optimized"
   },
   "author": "",
