@@ -13,7 +13,7 @@
   "devDependencies": {
     "assemblyscript": "github:AssemblyScript/assemblyscript#096094fd5aec9941a5afc4fa7bb6c1ada9e83815",
     "css-loader": "^3.2.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
